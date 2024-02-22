@@ -92,16 +92,39 @@ public class TestCalculator {
     @Test
     public void testAdditionAndMultiplication01() {
         IntegrationTestCases integrationTest = new IntegrationTestCases();
-        integrationTest.testAdditionAndMultiplication();
+      //  integrationTest.testAdditionAndMultiplication();
     }
     @Test
     public void testDivisionAndSubtraction02() {
         IntegrationTestCases integrationTest = new IntegrationTestCases();
-        integrationTest.testDivisionAndSubtraction();
+       // integrationTest.testDivisionAndSubtraction();
     }
     @Test
     public void testPowerAndAbsoluteValue03() {
         IntegrationTestCases integrationTest = new IntegrationTestCases();
-        integrationTest.testPowerAndAbsoluteValue();
+       // integrationTest.testPowerAndAbsoluteValue();
+    }
+    @Test
+    public void testAdditionAndMultiplication() {
+        main =new Main();
+
+        // Test addition and multiplication together
+        assertEquals(10, main.addition(main.multiply(2, 3), 4));
+    }
+
+    @Test
+    public void testDivisionAndSubtraction() {
+        main =new Main();
+
+        // Test division and subtraction together
+        assertEquals(2, main.division(main.substration(8, 2), 3));
+    }
+
+    @Test
+    public void testPowerAndAbsoluteValue() {
+        main =new Main();
+
+        // Test power and absolute value together
+        assertEquals(25, main.power(main.absoluteValue(-5), 2));
     }
 }
