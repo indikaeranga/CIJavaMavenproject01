@@ -76,33 +76,5 @@ public class TestCalculator {
         main=new Main();
         assertEquals(7,main.absoluteValue(7));
     }
-//    @Test
-//    public void testAdditionAndMultiplication1() {
-//        main=new Main();
-//
-//        // Test addition and multiplication together
-//        assertEquals(10, main.addition(main.multiply(2, 3), 4));
-//    }
-//
-//    @Test
-//    public void testMainConstructor() {
-//        main = new Main();
-//        assertNotEquals(main, null);
-//    }
-  //  @Test
-    public void testAdditionAndMultiplication01() {
-        IntegrationTestCases integrationTest = new IntegrationTestCases();
-      //  integrationTest.testAdditionAndMultiplication();
-    }
-   // @Test
-    public void testDivisionAndSubtraction02() {
-        IntegrationTestCases integrationTest = new IntegrationTestCases();
-       // integrationTest.testDivisionAndSubtraction();
-    }
-   // @Test
-    public void testPowerAndAbsoluteValue03() {
-        IntegrationTestCases integrationTest = new IntegrationTestCases();
-       // integrationTest.testPowerAndAbsoluteValue();
-    }
 
 }
