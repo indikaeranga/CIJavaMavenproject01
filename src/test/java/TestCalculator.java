@@ -2,6 +2,7 @@ import org.example.Main;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestCalculator {
 
@@ -74,5 +75,32 @@ public class TestCalculator {
     {
         main=new Main();
         assertEquals(7,main.absoluteValue(7));
+    }
+//    @Test
+//    public void testAdditionAndMultiplication1() {
+//        main=new Main();
+//
+//        // Test addition and multiplication together
+//        assertEquals(10, main.addition(main.multiply(2, 3), 4));
+//    }
+//
+//    public void testMainConstructor() {
+//        main = new Main();
+//        assertNotEquals(main, null);
+//    }
+    @Test
+    public void testAdditionAndMultiplication01() {
+        IntegrationTest integrationTest = new IntegrationTest();
+        integrationTest.testAdditionAndMultiplication();
+    }
+    @Test
+    public void testDivisionAndSubtraction02() {
+        IntegrationTest integrationTest = new IntegrationTest();
+        integrationTest.testDivisionAndSubtraction();
+    }
+    @Test
+    public void testPowerAndAbsoluteValue03() {
+        IntegrationTest integrationTest = new IntegrationTest();
+        integrationTest.testPowerAndAbsoluteValue();
     }
 }
