@@ -84,23 +84,24 @@ public class TestCalculator {
 //        assertEquals(10, main.addition(main.multiply(2, 3), 4));
 //    }
 //
+//    @Test
 //    public void testMainConstructor() {
 //        main = new Main();
 //        assertNotEquals(main, null);
 //    }
     @Test
     public void testAdditionAndMultiplication01() {
-        IntegrationTest integrationTest = new IntegrationTest();
+        IntegrationTestCases integrationTest = new IntegrationTestCases();
         integrationTest.testAdditionAndMultiplication();
     }
     @Test
     public void testDivisionAndSubtraction02() {
-        IntegrationTest integrationTest = new IntegrationTest();
+        IntegrationTestCases integrationTest = new IntegrationTestCases();
         integrationTest.testDivisionAndSubtraction();
     }
     @Test
     public void testPowerAndAbsoluteValue03() {
-        IntegrationTest integrationTest = new IntegrationTest();
+        IntegrationTestCases integrationTest = new IntegrationTestCases();
         integrationTest.testPowerAndAbsoluteValue();
     }
 }
